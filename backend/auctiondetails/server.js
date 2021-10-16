@@ -7,6 +7,8 @@ const port = process.env.PORT || 4000;
 app.use(express.urlencoded({ extended: true }))
 // parse requests of content-type - application/json
 app.use(express.json())
+const cors = require('cors');
+app.use(cors())
 // Configuring the database
 const dbConfig = require('./config/db.config.js');
 const mongoose = require('mongoose');
