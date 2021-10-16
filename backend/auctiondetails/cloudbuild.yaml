@@ -5,6 +5,7 @@ steps:
       - '-t'
       - 'gcr.io/$PROJECT_ID/cs3219-project-ay2122-2122-s1-g4:$COMMIT_SHA'
       # - ./backend/auctiondetails
+      - .
   - name: gcr.io/cloud-builders/docker
     args:
       - push
